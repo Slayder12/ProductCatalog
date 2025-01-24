@@ -10,4 +10,4 @@
 
 Результат:
 
-![](https://github.com/Slayder12/ProductCatalog/blob/main/assets/1.gif)
+<img src="https://github.com/Slayder12/ProductCatalog/blob/main/assets/1.gif" width="50%" alt="Описание GIF" />
