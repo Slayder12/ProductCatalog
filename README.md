@@ -10,4 +10,4 @@
 
 Результат:
 
-![](https://github.com/Slayder12/ProductCatalog/blob/main/assets/1.gif|300)
+![](https://github.com/Slayder12/ProductCatalog/blob/main/assets/1.gif)
