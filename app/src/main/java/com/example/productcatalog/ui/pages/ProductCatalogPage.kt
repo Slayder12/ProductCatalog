@@ -32,10 +32,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.productcatalog.models.ProductModule
+import com.example.productcatalog.models.ProductModel
 
 @Composable
-fun ProductCatalog(productList: List<ProductModule>, modifier: Modifier = Modifier) {
+fun ProductCatalog(productList: List<ProductModel>, modifier: Modifier = Modifier) {
     Column(
         Modifier.fillMaxWidth()
     ) {
@@ -66,7 +66,7 @@ fun ProductCatalog(productList: List<ProductModule>, modifier: Modifier = Modifi
                 ),
                 modifier = Modifier.fillMaxWidth()
             ) {
-                items(productList) { item: ProductModule ->
+                items(productList) { item: ProductModel ->
                     ProductRow(model = item)
                     Spacer(modifier = Modifier.padding(5.dp))
                 }
@@ -99,7 +99,7 @@ fun ProductCatalog(productList: List<ProductModule>, modifier: Modifier = Modifi
                     horizontal = 15.dp, vertical = 2.dp
                 ), modifier = Modifier.fillMaxSize()
             ) {
-                items(productList) { item: ProductModule ->
+                items(productList) { item: ProductModel ->
                     ProductRow(model = item)
                     Spacer(modifier = Modifier.padding(5.dp))
                 }
@@ -109,7 +109,7 @@ fun ProductCatalog(productList: List<ProductModule>, modifier: Modifier = Modifi
 }
 
 @Composable
-fun ProductRow(model: ProductModule) {
+fun ProductRow(model: ProductModel) {
     var isClick by remember {
         mutableStateOf(false)
     }
